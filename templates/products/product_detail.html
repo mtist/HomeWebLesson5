@@ -9,4 +9,10 @@
     <h2>{{ product.title }}</h2>
 {#    Тут нужно вывести все поля продукта#}
 {#    Вывести имя каталога можно так: product.catalog.title #}
+    <h3>{{ product.picture  }}</h3>
+    <h3>Каталог: {{ product.catalog }}</h3>
+    <h3>Цена: {{ product.price }} руб.</h3>
+    <h3>Масса: {{ product.mass }} кг</h3>
+    <h3>Производитель: {{ product.manufacturer }}</h3>
+
 {% endblock %}

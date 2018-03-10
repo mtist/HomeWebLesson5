@@ -11,4 +11,8 @@
 {#    Каждый каталог должен вести на страницу со списком продукции (за это отвечает ProductListView)#}
 {#    такой должна быть ссылка <a href="{% url 'products:catalogs' catalog.slug %}"> Имя каталога (title)</a>#}
 {#    #}
+
+    {% for catolog in catalogs %}
+        <a href="{% url 'products:catalogs' catalog.slug %}"> Имя каталога (title)</a>
+    {% endfor %}
 {% endblock %}

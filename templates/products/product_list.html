@@ -12,4 +12,8 @@
 {#    Конечно же с помощью цикла нужно пройтись по products и вывести все продукты.#}
 {#    Каждый продукт должен содержать ссылку на детальную страницу продукта#}
 {#    для этого используйте ссылку : <a href="{% url 'products:detail' product.slug %}">Имя продукта</a>#}
+
+    {% for product in products %}
+        <a href="{% url 'products:detail' product.slug %}">Имя продукта</a>
+    {% endfor %}
 {% endblock %}
